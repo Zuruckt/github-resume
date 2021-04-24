@@ -3,7 +3,7 @@
 </template>
 
 <style>
-@import 'https://bootswatch.com/4/lux/bootstrap.min.css';
+@import 'https://bootswatch.com/4/pulse/bootstrap.min.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
