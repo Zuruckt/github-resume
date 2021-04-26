@@ -4,7 +4,7 @@
         <UserProfile :username="username"></UserProfile>
     </div>
     <div class="col-md-9 bg-light p-0 vh-100">
-        <UserRepos></UserRepos>
+        <UserRepos :username="username"></UserRepos>
     </div>
   </div>
 </template>

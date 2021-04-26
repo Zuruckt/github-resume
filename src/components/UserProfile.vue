@@ -20,7 +20,7 @@
         <span v-if="user.location"><i class="fas fa-map-marker-alt"></i> {{user.location}}</span>
         <span v-if="user.email"><i class="fas fa-email"></i> {{user.email}}</span>
         <span v-if="user.blog"><i class="fas fa-link"></i>  <a :href="user.blog">{{user.blog}}</a></span>
-        <span v-if="user.twitter_username"><i class="fas fa-twitter"></i> <a :href="'http://twitter.com/' + user.twitter_username">{{user.twitter_username}}</a></span>
+        <span v-if="user.twitter_username"><i class="fas fa-twitter"></i> <a :href="'http://twitter.com/' + user.twitter_username">{{'http://twitter.com/' + user.twitter_username}}</a></span>
     </div>
   </div>
 </template>
@@ -39,8 +39,8 @@ export default {
   data() {
     return {
       user: {
-        name: null,
-        avatar_url: null,
+        name: 'A Github User',
+        avatar_url: '@/assets/user.png',
         followers: 0,
         following: 0,
         bio: null,
